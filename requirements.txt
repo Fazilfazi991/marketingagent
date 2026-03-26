@@ -13,3 +13,6 @@ httpx
 stripe
 sendgrid
 weasyprint
+openai
+python-multipart
+python-dotenv
