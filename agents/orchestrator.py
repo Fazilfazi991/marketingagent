@@ -5,7 +5,7 @@ from typing import Dict, Any
 
 from agents.specialized import (
     ResearchAgent, StrategyAgent, BlogWriterAgent, SocialMediaAgent, 
-    EmailAgent, SEOAgent, PublisherAgent, 
+    SEOAgent, PublisherAgent, 
     DistributionAgent, AnalyticsAgent
 )
 from agents.image_agent import ImageBriefAgent, DALLEImageAgent
