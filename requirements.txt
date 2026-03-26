@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+asyncpg
+supabase
+pydantic
+pydantic-settings
+celery
+redis
+websockets
+python-jose[cryptography]
+httpx
+stripe
+sendgrid
+weasyprint
