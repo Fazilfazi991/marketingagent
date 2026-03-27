@@ -1,15 +1,15 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Bot, FileText, Megaphone, BarChart2, FileBarChart, CreditCard, Zap } from 'lucide-react'
+import React from "react"
+import { NavLink } from "react-router-dom"
+import { LayoutDashboard, Bot, FileText, Megaphone, BarChart2, BarChart3, CreditCard, Zap } from "lucide-react"
 
 const links = [
-  { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { to: '/agents', label: 'Agents', icon: Bot },
-  { to: '/content', label: 'Content', icon: FileText },
-  { to: '/campaigns', label: 'Campaigns', icon: Megaphone },
-  { to: '/analytics', label: 'Analytics', icon: BarChart2 },
-  { to: '/reports', label: 'Reports', icon: FileBarChart },
-  { to: '/billing', label: 'Billing', icon: CreditCard },
+  { to:"/dashboard", label:"Dashboard", icon:LayoutDashboard },
+  { to:"/agents",    label:"Agents",    icon:Bot },
+  { to:"/content",   label:"Content",   icon:FileText },
+  { to:"/campaigns", label:"Campaigns", icon:Megaphone },
+  { to:"/analytics", label:"Analytics", icon:BarChart2 },
+  { to:"/reports",   label:"Reports",   icon:BarChart3 },
+  { to:"/billing",   label:"Billing",   icon:CreditCard },
 ]
 
 export default function Sidebar() {
@@ -24,20 +24,14 @@ export default function Sidebar() {
           <p className="text-[10px] text-slate-400 font-medium uppercase tracking-widest">Agent System</p>
         </div>
       </div>
-
       <nav className="flex-1 space-y-0.5">
         {links.map(({ to, label, icon: Icon }) => (
           <NavLink key={to} to={to}
-            className={({ isActive }) =>
-              `sidebar-link ${isActive ? 'sidebar-link-active' : ''}`
-            }
-          >
-            <Icon size={17} />
-            <span>{label}</span>
+            className={({ isActive }) => `sidebar-link ${isActive ? "sidebar-link-active" : ""}`}>
+            <Icon size={17} /><span>{label}</span>
           </NavLink>
         ))}
       </nav>
-
       <div className="pt-4 border-t border-slate-200">
         <div className="px-3 py-2 bg-brand-50 rounded-xl">
           <p className="text-[10px] font-black text-brand-600 uppercase tracking-widest mb-0.5">Free Plan</p>

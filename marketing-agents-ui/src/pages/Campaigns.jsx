@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Megaphone, Plus, Calendar, MoreVertical, Play, Pause } from 'lucide-react'
+import { Megaphone, Plus, MoreVertical } from "lucide-react"
 
 const DAYS = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
 

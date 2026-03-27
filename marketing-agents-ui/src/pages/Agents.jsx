@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Play, CheckCircle2, RotateCw, AlertCircle, Search, Brain, PenTool, Mail, Image, Globe, Database, Megaphone } from 'lucide-react'
+import { Play, CheckCircle2, RotateCw, AlertCircle, Search, Brain, PenTool, Mail, ImageIcon, Globe, Database, Megaphone } from "lucide-react"
 
 const AGENTS = [
   { name: 'ResearchAgent', desc: 'Trend analysis & data mining', icon: Search, stage: 1 },

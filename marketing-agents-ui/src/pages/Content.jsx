@@ -1,6 +1,6 @@
 // Content.jsx
 import React, { useState } from 'react'
-import { Search, Filter, FileText, Mail, Linkedin, Twitter, Eye, ExternalLink, MoreHorizontal } from 'lucide-react'
+import { Search, Filter, FileText, Mail, Eye, ExternalLink, MoreHorizontal } from "lucide-react"
 
 const CONTENT = [
   { id:1, title:'The Future of AI Marketing', platform:'Blog', client:'Acme Corp', date:'Mar 24', status:'Approved', type:'blog' },
